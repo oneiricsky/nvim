@@ -1,3 +1,8 @@
+# nvim
+My personal neovim config
+
+<details>
+<summary> Old kickstart.nvim README </summary>
 # kickstart.nvim
 
 ## Introduction
@@ -238,4 +243,4 @@ sudo dnf install -y gcc make git ripgrep fd-find unzip neovim
 sudo pacman -S --noconfirm --needed gcc make git ripgrep fd unzip neovim
 ```
 </details>
-
+</details>
