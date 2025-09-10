@@ -56,6 +56,14 @@ function M.setup()
   -- vim.keymap.set("n", "<C-S-l>", "<C-w>L", { desc = "Move window to the right" })
   -- vim.keymap.set("n", "<C-S-j>", "<C-w>J", { desc = "Move window to the lower" })
   -- vim.keymap.set("n", "<C-S-k>", "<C-w>K", { desc = "Move window to the upper" })
+
+  -- Remap scrolling
+  vim.keymap.set('n', 'J', '<C-d>', { desc = 'Down half a page', noremap = true, silent = true })
+  vim.keymap.set('n', 'K', '<C-u>', { desc = 'Up half a page', noremap = true, silent = true })
+
+  -- Preserve original behaviors on <leader>J / <leader>K
+  vim.keymap.set('n', '<leader>j', 'J', { desc = '[J]oin lines', noremap = true, silent = true })
+  vim.keymap.set('n', '<leader>k', 'K', { desc = 'Help under cursor', noremap = true, silent = true })
 end
 
 -- Call setup immediately for backward compatibility

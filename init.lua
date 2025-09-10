@@ -22,6 +22,5 @@ require 'config.lazy' -- Plugin manager and plugin loading
 -- Set up hot-reload system for development
 require('config.reload').setup_reload_keymaps()
 
-require 'core.dap-map'
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et

@@ -10,7 +10,7 @@ function M.setup()
   vim.o.number = true
   -- You can also add relative line numbers, to help with jumping.
   --  Experiment for yourself to see if you like it!
-  -- vim.o.relativenumber = true
+  vim.o.relativenumber = true
 
   -- Enable mouse mode, can be useful for resizing splits for example!
   vim.o.mouse = 'a'
@@ -66,6 +66,9 @@ function M.setup()
   -- Show which line your cursor is on
   vim.o.cursorline = true
 
+  -- Show column 80
+  vim.o.colorcolumn = '80'
+
   -- Minimal number of screen lines to keep above and below the cursor.
   vim.o.scrolloff = 10
 
@@ -73,6 +76,10 @@ function M.setup()
   -- instead raise a dialog asking if you wish to save the current file(s)
   -- See `:help 'confirm'`
   vim.o.confirm = true
+
+  vim.o.shiftwidth = 2
+  vim.o.smarttab = true
+  vim.o.expandtab = true
 end
 
 -- Call setup immediately for backward compatibility
