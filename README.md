@@ -1,6 +1,8 @@
 # nvim
 My personal neovim config
 
+requires `Neovim >= 0.8.0`
+
 <details>
 <summary> Old kickstart.nvim README </summary>
 # kickstart.nvim
